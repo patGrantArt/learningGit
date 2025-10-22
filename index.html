@@ -1,6 +1,13 @@
 <h1>Hello world: Here is my website</h1>
+<h1 id="dateDisplay">This texts should be invisible</h1>
+
 
 <script>
-  var message = "we are now using some Javascript";
-  console.log(message);
+  var date = new Date()
+  var today = date.getDay()+", "+date.getMonth()+" "+date.getDate();
+  console.log(`Hello! today is ${today}`);
+  document.getElementByID("dateDisplay").innerText = `today is ${today}` 
 </script>
+
+const d = new Date();
+let day = d.getDay();
